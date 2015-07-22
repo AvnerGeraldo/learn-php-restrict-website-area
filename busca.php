@@ -8,7 +8,7 @@
 
 if( !isset($_POST) || empty($_POST['txtSearchBox'])) {
     echo "<script>alert('Por favor preencha o campo de pesquisa antes de buscar!');
-window.location.href='http://localhost/php-site-simples-bd/';</script>";
+window.location.href='/php-area-administrativa/';</script>";
     exit;
 } else {
     require_once("controllerPaginas.php");
@@ -38,7 +38,7 @@ window.location.href='http://localhost/php-site-simples-bd/';</script>";
             <div class="list-group">
                 <?php
                 foreach($arrayPaginasEncontradas as $pagina) {
-                    echo "<a href='http://localhost/php-site-simples-bd/";
+                    echo "<a href='/php-area-administrativa/";
                     if( $pagina['link_pagina'] != 'index' ) {
                       echo $pagina['link_pagina'];
                     }

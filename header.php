@@ -47,7 +47,7 @@ if( empty($conteudo_pagina) ) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="http://localhost/php-site-simples-bd/">Logo</a>
+                  <a class="navbar-brand" href="/php-area-administrativa/">Logo</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                     <ul class="nav navbar-nav">
@@ -60,7 +60,7 @@ if( empty($conteudo_pagina) ) {
                                       $link .= " class='active'";
                                   }
 
-                                  $link .= "><a href='" . ($pagina['link_pagina'] != 'index' ? $pagina['link_pagina'] : 'http://localhost/php-site-simples-bd/') . "'>";
+                                  $link .= "><a href='" . ($pagina['link_pagina'] != 'index' ? $pagina['link_pagina'] : '/php-area-administrativa/') . "'>";
                                   if( $pagina['link_pagina'] == 'login' ) {
                                       $link .= "<span class='glyphicon glyphicon-lock'></span>";
                                   } else {
@@ -75,7 +75,7 @@ if( empty($conteudo_pagina) ) {
                       ?>
                     </ul>
                     <div class="col-sm-4 col-md-4">
-                        <form action="http://localhost/php-site-simples-bd/busca" method="POST" class="navbar-form" role="search">
+                        <form action="/php-area-administrativa/busca" method="POST" class="navbar-form" role="search">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search" name="txtSearchBox">
                                 <div class="input-group-btn">
