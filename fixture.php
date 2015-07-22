@@ -14,7 +14,7 @@ $conn = conectarDB();
 
 
 echo "Removendo tabela tbAcesso";
-$conn->query("DROP TABLE IF EXISTS tbacesso");
+$conn->query("DROP TABLE IF EXISTS tbacesso ");
 echo " - OK\n<BR>";
 
 echo "Criando tabela tbAcesso";
@@ -23,7 +23,8 @@ id_usuario INT NOT NULL AUTO_INCREMENT,
 usuario VARCHAR(30)  NOT NULL,
 senha_usuario VARCHAR(60)  NOT NULL,
 PRIMARY KEY(id_usuario)
-);");
+)
+;");
 echo " - OK\n<BR>";
 
 $usuario    = "admin";
@@ -46,7 +47,8 @@ $conn->query("CREATE TABLE tbprodutos(
   descricao_produto TEXT CHARACTER SET 'utf8' NOT NULL,
   valor_produto FLOAT NOT NULL,
   PRIMARY KEY(id_produto)
-);");
+)
+;");
 echo " - OK\n<BR>";
 
 echo "Inserindo dados na tabela tbProdutos\n";
@@ -75,7 +77,8 @@ link_pagina VARCHAR(100)  NOT NULL,
 conteudo_pagina LONGTEXT NULL,
 in_menu CHAR(1) NOT NULL DEFAULT 'N',
 PRIMARY KEY(id_pagina)
-);");
+)
+;");
 echo " - OK\n<BR>";
 
 echo "Inserindo dados na tabela tbPaginas";
@@ -189,7 +192,7 @@ $stmt->execute();
 
 
 //Área Administrativa
-$nome_pagina        = 'Área Administrativa';
+$nome_pagina        = 'Area Administrativa';
 $link_pagina        = 'area-administrativa';
 $conteudo_pagina    = NULL;
 $stmt = $conn->prepare("INSERT INTO tbPaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");

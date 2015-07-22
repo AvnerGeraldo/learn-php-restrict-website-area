@@ -26,58 +26,60 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.65">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4143577">
-              <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+            <state vertical-scroll-proportion="-15.5">
+              <caret line="41" column="87" selection-start-line="41" selection-start-column="87" selection-end-line="41" selection-end-column="87" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fixture.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture.php">
+      <file leaf-file-name="conexao.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conexao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.9">
-              <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+            <state vertical-scroll-proportion="9.3">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="area-administrativa.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/area-administrativa.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.92191434">
+              <caret line="146" column="7" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
               <folding>
-                <marker date="1437564470774" expanded="true" signature="274:295" placeholder="DROP TABLE I..." />
-                <marker date="1437564470774" expanded="true" signature="274:303" placeholder="DROP TABLE I..." />
-                <marker date="1437564470774" expanded="true" signature="374:544" placeholder="CREATE TABLE..IF..." />
-                <marker date="1437564470774" expanded="true" signature="697:766" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="913:944" placeholder="DROP TABLE I..." />
-                <marker date="1437564470774" expanded="true" signature="1017:1258" placeholder="CREATE TABLE..tbprodutos..." />
-                <marker date="1437564470774" expanded="true" signature="1610:1718" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="1926:1956" placeholder="DROP TABLE I..." />
-                <marker date="1437564470774" expanded="true" signature="2028:2270" placeholder="CREATE TABLE..IF..." />
-                <marker date="1437564470774" expanded="true" signature="2534:2652" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="3056:3119" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="3056:3174" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="3692:4361" placeholder="..." />
-                <marker date="1437564470774" expanded="true" signature="3724:4350" placeholder="..." />
-                <marker date="1437564470774" expanded="true" signature="3805:4335" placeholder="..." />
-                <marker date="1437564470774" expanded="true" signature="3839:4227" placeholder="..." />
-                <marker date="1437564470774" expanded="true" signature="3891:3980" placeholder="..." />
-                <marker date="1437564470774" expanded="true" signature="4038:4204" placeholder="..." />
-                <marker date="1437564470774" expanded="true" signature="4067:4123" placeholder="..." />
-                <marker date="1437564470774" expanded="true" signature="4067:4177" placeholder="..." />
-                <marker date="1437564470774" expanded="true" signature="4469:4532" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="4469:4587" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="4997:5060" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="4997:5115" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="5430:5493" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="5430:5548" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="5876:5994" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="6303:6421" placeholder="INSERT INTO ..." />
-                <marker date="1437564470774" expanded="true" signature="6773:6891" placeholder="INSERT INTO ..." />
+                <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="estiloAreaAdministrativa.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-files/css/estiloAreaAdministrativa.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="340" column="1" selection-start-line="340" selection-start-column="1" selection-end-line="340" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,34 +87,9 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.775">
               <caret line="8" column="36" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="38" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controllerAcesso.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllerAcesso.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.975">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-              <folding>
-                <marker date="1437526895979" expanded="true" signature="311:339" placeholder="SELECT * FRO..tbacesso..." />
-                <marker date="1437526895979" expanded="true" signature="311:340" placeholder="SELECT * FRO..tbProdutos..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controllerProdutos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllerProdutos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding>
-                <marker date="1437526450304" expanded="true" signature="344:378" placeholder="SELECT * FRO..tbProdutos..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -123,6 +100,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Html5" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -135,8 +113,12 @@
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/controllerProdutos.php" />
         <option value="$PROJECT_DIR$/controllerAcesso.php" />
+        <option value="$PROJECT_DIR$/busca.php" />
+        <option value="$PROJECT_DIR$/contato.php" />
         <option value="$PROJECT_DIR$/fixture.php" />
+        <option value="$PROJECT_DIR$/web-files/css/estiloAreaAdministrativa.css" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/area-administrativa.php" />
       </list>
     </option>
   </component>
@@ -148,7 +130,9 @@
     <order />
   </component>
   <component name="PhpServers">
-    <servers />
+    <servers>
+      <server host="localhost" id="86e2feb9-8bd6-43dd-a90d-78b97adc5861" name="Apache" />
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6" />
   <component name="ProjectFrameBounds">
@@ -200,6 +184,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php-area-administrativa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php-area-administrativa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php-area-administrativa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php-area-administrativa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -207,15 +223,17 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php-site-simples-bd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.fixture.php">
-    <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php-area-administrativa/index.php">
+  <component name="RunManager" selected="JavaScript Debug.index.php">
+    <configuration default="false" name="index.php (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php-area-administrativa/index.php">
       <method />
     </configuration>
-    <configuration default="false" name="fixture.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php-area-administrativa/fixture.php">
+    <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -229,10 +247,22 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/..">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
+      <method />
+    </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -244,14 +274,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost/php-area-administrativa/index.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="fixture.php" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/php-area-administrativa/fixture.php">
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.fixture.php" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.php (1)" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.fixture.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -330,35 +366,30 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding>
-            <marker date="1437564470774" expanded="true" signature="274:295" placeholder="DROP TABLE I..." />
-            <marker date="1437564470774" expanded="true" signature="274:303" placeholder="DROP TABLE I..." />
-            <marker date="1437564470774" expanded="true" signature="374:544" placeholder="CREATE TABLE..IF..." />
-            <marker date="1437564470774" expanded="true" signature="697:766" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="913:944" placeholder="DROP TABLE I..." />
-            <marker date="1437564470774" expanded="true" signature="1017:1258" placeholder="CREATE TABLE..tbprodutos..." />
-            <marker date="1437564470774" expanded="true" signature="1610:1718" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="1926:1956" placeholder="DROP TABLE I..." />
-            <marker date="1437564470774" expanded="true" signature="2028:2270" placeholder="CREATE TABLE..IF..." />
-            <marker date="1437564470774" expanded="true" signature="2534:2652" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="3056:3119" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="3056:3174" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="3692:4361" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="3724:4350" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="3805:4335" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="3839:4227" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="3891:3980" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="4038:4204" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="4067:4123" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="4067:4177" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="4469:4532" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="4469:4587" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="4997:5060" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="4997:5115" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="5430:5493" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="5430:5548" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="5876:5994" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="6303:6421" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="6773:6891" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="DROP TABLE I..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="DROP TABLE I..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..tbprodutos..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="DROP TABLE I..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -376,8 +407,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1437526895979" expanded="true" signature="311:339" placeholder="SELECT * FRO..tbacesso..." />
-            <marker date="1437526895979" expanded="true" signature="311:340" placeholder="SELECT * FRO..tbProdutos..." />
+            <marker date="1437526895979" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbacesso..." />
           </folding>
         </state>
       </provider>
@@ -387,7 +417,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
-            <marker date="1437526450304" expanded="true" signature="344:378" placeholder="SELECT * FRO..tbProdutos..." />
+            <marker date="1437526450304" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbProdutos..." />
           </folding>
         </state>
       </provider>
@@ -408,31 +438,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllerProdutos.php">
+    <entry file="file://$PROJECT_DIR$/busca.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state vertical-scroll-proportion="-4.35">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="60" />
           <folding>
-            <marker date="1437526450304" expanded="true" signature="344:378" placeholder="SELECT * FRO..tbProdutos..." />
+            <marker date="1437565019974" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/contato.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="38" />
+        <state vertical-scroll-proportion="-0.95214105">
+          <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllerAcesso.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.975">
+        <state vertical-scroll-proportion="0.11335012">
           <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
           <folding>
-            <marker date="1437526895979" expanded="true" signature="311:339" placeholder="SELECT * FRO..tbacesso..." />
-            <marker date="1437526895979" expanded="true" signature="311:340" placeholder="SELECT * FRO..tbProdutos..." />
+            <marker date="1437526895979" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbacesso..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllerPaginas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1437487898596" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbPaginas..." />
+            <marker date="1437487898596" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbPaginas..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllerProdutos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.039042823">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <marker date="1437526450304" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbProdutos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6397985">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.775">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conexao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="9.3">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4143577">
+          <caret line="194" column="24" selection-start-line="194" selection-start-column="24" selection-end-line="194" selection-end-column="24" />
+          <folding>
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="DROP TABLE I..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="DROP TABLE I..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..tbprodutos..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="DROP TABLE I..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1437566161722" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -440,54 +579,34 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.65">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture.php">
+    <entry file="file://$PROJECT_DIR$/web-files/css/estiloAreaAdministrativa.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.9">
-          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
-          <folding>
-            <marker date="1437564470774" expanded="true" signature="274:295" placeholder="DROP TABLE I..." />
-            <marker date="1437564470774" expanded="true" signature="274:303" placeholder="DROP TABLE I..." />
-            <marker date="1437564470774" expanded="true" signature="374:544" placeholder="CREATE TABLE..IF..." />
-            <marker date="1437564470774" expanded="true" signature="697:766" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="913:944" placeholder="DROP TABLE I..." />
-            <marker date="1437564470774" expanded="true" signature="1017:1258" placeholder="CREATE TABLE..tbprodutos..." />
-            <marker date="1437564470774" expanded="true" signature="1610:1718" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="1926:1956" placeholder="DROP TABLE I..." />
-            <marker date="1437564470774" expanded="true" signature="2028:2270" placeholder="CREATE TABLE..IF..." />
-            <marker date="1437564470774" expanded="true" signature="2534:2652" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="3056:3119" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="3056:3174" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="3692:4361" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="3724:4350" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="3805:4335" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="3839:4227" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="3891:3980" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="4038:4204" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="4067:4123" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="4067:4177" placeholder="..." />
-            <marker date="1437564470774" expanded="true" signature="4469:4532" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="4469:4587" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="4997:5060" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="4997:5115" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="5430:5493" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="5430:5548" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="5876:5994" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="6303:6421" placeholder="INSERT INTO ..." />
-            <marker date="1437564470774" expanded="true" signature="6773:6891" placeholder="INSERT INTO ..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="340" column="1" selection-start-line="340" selection-start-column="1" selection-end-line="340" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4143577">
-          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+        <state vertical-scroll-proportion="-15.5">
+          <caret line="41" column="87" selection-start-line="41" selection-start-column="87" selection-end-line="41" selection-end-column="87" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/area-administrativa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92191434">
+          <caret line="146" column="7" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
