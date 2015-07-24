@@ -1,29 +1,3 @@
-<?php
-
-require_once("controllerPaginas.php");
-$cPaginas 			= new controllerPaginas();
-$conteudo_pagina 	= null;
-$requisicao_pagina 	= STR_REPLACE(".php", "", ( empty($_SERVER['REQUEST_URI']) ? 'index' : SUBSTR($_SERVER['REQUEST_URI'], 1, STRLEN($_SERVER['REQUEST_URI']))));
-
-if( strpos($requisicao_pagina, "/") >= 0 ) {
-    $arrayRequisicao    = explode("/", $requisicao_pagina);
-    $requisicao_pagina  = ( empty($arrayRequisicao[1]) ? 'index' : $arrayRequisicao[1] );
-}
-
-$arrayPaginas 		= $cPaginas->listaPaginas();
-foreach ( $arrayPaginas as $pagina ) {
-    if( $pagina['link_pagina'] ==  strtolower($requisicao_pagina) ) {
-        $conteudo_pagina = $pagina['conteudo_pagina'];
-    }
-}
-
-/*
-if( empty($conteudo_pagina) ) {
-    echo "<script type='text/javascript'>window.location.href='error-page.html';</script>";
-    exit;
-}
-*/
-?>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
@@ -45,6 +19,21 @@ if( empty($conteudo_pagina) ) {
         ?>
         <script type="text/javascript" src="web-files/js/jquery.min.js"></script>
         <script type="text/javascript" src="web-files/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('.navbar-toggle-sidebar').click(function () {
+                    $('.navbar-nav').toggleClass('slide-in');
+                    $('.side-body').toggleClass('body-slide-in');
+                    $('#search').removeClass('in').addClass('collapse').slideUp(200);
+                });
+
+                $('#search-trigger').click(function () {
+                    $('.navbar-nav').removeClass('slide-in');
+                    $('.side-body').removeClass('body-slide-in');
+                    $('.search-input').focus();
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="container-fluid">

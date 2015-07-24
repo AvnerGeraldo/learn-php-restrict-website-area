@@ -5,7 +5,7 @@
 * Date: 19/07/2015
 * Time: 21:50
 */
-
+require_once("header.php");
 if( !isset($_POST) || empty($_POST['txtSearchBox'])) {
     echo "<script>alert('Por favor preencha o campo de pesquisa antes de buscar!');
 window.location.href='/php-area-administrativa/';</script>";
@@ -57,4 +57,5 @@ window.location.href='/php-area-administrativa/';</script>";
         <?php
     }
 }
+require_once("footer.php");
 ?>

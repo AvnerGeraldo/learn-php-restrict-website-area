@@ -17,6 +17,23 @@ class controllerAcesso
         $this->_db = conectarDB();
     }
 
+    public function listaUsuarios($usuario = null)
+    {
+        $sql = "SELECT * FROM tbacesso WHERE 1=1";
+
+        if( !empty($usuario) ) {
+            $sql .= " AND usuario LIKE ':nome_usuario'";
+        }
+        $stmt = $this->_db->prepare($sql);
+
+        if( !empty($usuario) ) {
+            $stmt->bindValue("nome_usuario", $usuario);
+        }
+
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function logar($usuario, $senha)
     {
         $sql = "SELECT * FROM tbacesso WHERE  ";
@@ -38,4 +55,21 @@ class controllerAcesso
         }
         return FALSE;
     }
+
+    public function verificarSessao($usuario_sessao)
+    {
+        if( !isset($_SESSION) ) {
+            session_start();
+        }
+        extract($_SESSION);
+
+        if( isset($usuario) && !empty($usuario) ) {
+            if( $usuario == $usuario_sessao ) {
+                return TRUE;
+            }
+        }
+
+        return FALSE;
+    }
+
 }

@@ -10,7 +10,9 @@
 			$erro++;
 		}
 	}
-
+?>
+    <div class="content col-lg-12 col-md-12">
+<?php
     if( $erro > 0 ) { ?>
 
     <div class="alert alert-dismissible alert-warning">
@@ -84,3 +86,6 @@
           </fieldset>
         </form>
     </div>
+<?php
+    require_once("footer.php");
+?>
