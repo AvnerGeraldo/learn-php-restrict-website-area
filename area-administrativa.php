@@ -5,8 +5,51 @@
  * Date: 22/07/2015
  * Time: 08:40
  */
-?>
 
+if( !isset($_SESSION) ) {
+    session_start();
+}
+
+$cAcesso    = new controllerAcesso();
+$cPaginas   = new controllerPaginas();
+
+if( !$cAcesso->verificarSessao($_SESSION['usuario']) ) {
+    echo "<script type='text/javascript'>alert('Você não tem permissão para acessar esta área!Redirecionando....');window.location.href='/php-area-administrativa/';";
+    exit;
+}
+
+
+
+?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="web-files/lib/bootstrap/dist/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="web-files/css/themes/bootstrap.min.css" media="all">
+    <!--<link rel="stylesheet" href="web-files/css/styleWebsite.css" media="all">-->
+    <link rel="stylesheet" href="web-files/css/estiloAreaAdministrativa.css" media="all">
+
+    <script type="text/javascript" src="web-files/js/jquery.min.js"></script>
+    <script type="text/javascript" src="web-files/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.navbar-toggle-sidebar').click(function () {
+                $('.navbar-nav').toggleClass('slide-in');
+                $('.side-body').toggleClass('body-slide-in');
+                $('#search').removeClass('in').addClass('collapse').slideUp(200);
+            });
+
+            $('#search-trigger').click(function () {
+                $('.navbar-nav').removeClass('slide-in');
+                $('.side-body').removeClass('body-slide-in');
+                $('.search-input').focus();
+            });
+        });
+    </script>
+</head>
+<body>
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -51,7 +94,8 @@
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
-</nav>  	<div class="container-fluid main-container">
+</nav>
+<div class="container-fluid main-container">
     <div class="col-md-2 sidebar">
         <div class="row">
             <!-- uncomment code for absolute positioning tweek see top comment in css -->
@@ -131,18 +175,5 @@
         </p>
     </footer>
 </div>
-<script type="text/javascript">
-    $(function () {
-        $('.navbar-toggle-sidebar').click(function () {
-            $('.navbar-nav').toggleClass('slide-in');
-            $('.side-body').toggleClass('body-slide-in');
-            $('#search').removeClass('in').addClass('collapse').slideUp(200);
-        });
-
-        $('#search-trigger').click(function () {
-            $('.navbar-nav').removeClass('slide-in');
-            $('.side-body').removeClass('body-slide-in');
-            $('.search-input').focus();
-        });
-    });
-</script>
+</body>
+</html>
