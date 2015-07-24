@@ -22,12 +22,10 @@ class modelPaginas
         $sql = "SELECT * FROM tbPaginas WHERE 1=1 ";
 
         if( !empty($link) ) {
-            $sql = " AND link_pagina = ':link'";
+            $sql .= " AND link_pagina = '{$link}'";
         }
+
         $stmt  = $this->_db->prepare($sql);
-        if( !empty($link) ) {
-            $stmt->bindValue("link", $link);
-        }
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
@@ -39,5 +37,23 @@ class modelPaginas
 
         $query = $this->_db->query($sql);
         return $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function alterarConteudoPagina($conteudoPagina, $linkPagina)
+    {
+        $listaPagina = $this->listaPaginas($linkPagina);
+
+        if( !empty($listaPagina) ) {
+            extract($listaPagina[0]);
+            if( isset($id_pagina) && !empty($id_pagina) ) {
+                //$conteudoPagina = htmlentities($conteudoPagina, ENT_QUOTES, 'ISO-8859-1');
+
+                $sql  = "UPDATE tbPaginas SET conteudo_pagina = '{$conteudoPagina}' ";
+                $sql .= " WHERE id_pagina ={$id_pagina}";
+                $stmt  = $this->_db->prepare($sql);
+                return $stmt->execute();
+            }
+        }
+        return FALSE;
     }
 }

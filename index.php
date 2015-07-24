@@ -1,7 +1,7 @@
 <?php
 
 require_once("modelPaginas.php");
-$cPaginas 			= new modelPaginas();
+$mPaginas 			= new modelPaginas();
 $conteudo_pagina 	= null;
 $requisicao_pagina 	= STR_REPLACE(".php", "", ( empty($_SERVER['REQUEST_URI']) ? 'index' : SUBSTR($_SERVER['REQUEST_URI'], 1, STRLEN($_SERVER['REQUEST_URI']))));
 
@@ -10,7 +10,7 @@ if( strpos($requisicao_pagina, "/") >= 0 ) {
     $requisicao_pagina  = ( empty($arrayRequisicao[1]) ? 'index' : $arrayRequisicao[1] );
 }
 
-$arrayPaginas 		= $cPaginas->listaPaginas();
+$arrayPaginas 		= $mPaginas->listaPaginas();
 foreach ( $arrayPaginas as $pagina ) {
     if( $pagina['link_pagina'] ==  strtolower($requisicao_pagina) ) {
         $conteudo_pagina = $pagina['conteudo_pagina'];
