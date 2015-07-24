@@ -8,7 +8,7 @@
  */
 
 require_once("conexao.php");
-class controllerPaginas
+class modelPaginas
 {
     private $_db;
 

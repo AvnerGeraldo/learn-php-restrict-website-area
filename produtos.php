@@ -31,7 +31,7 @@
         </div>
     </nav>
 <?php
-	require_once("controllerProdutos.php");
+	require_once("modelProdutos.php");
 	$cProdutos = new controllerProdutos();
 	$listaProdutos = $cProdutos->listaProdutos();
 ?>

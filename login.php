@@ -6,10 +6,10 @@
     <?php
     if( isset($_POST['txtUser'], $_POST['txtPassword']) ) {
         if( !empty($_POST['txtUser']) && !empty($_POST['txtPassword']) ) {
-            require_once("controllerAcesso.php");
+            require_once("modelAcesso.php");
             extract($_POST);
 
-            $cAcesso = new controllerAcesso();
+            $cAcesso = new modelAcesso();
             $retorno = $cAcesso->logar($txtUser, $txtPassword);
             if( $retorno ) {
     ?>
@@ -41,7 +41,7 @@
     }
     ?>
 </div>
-<div class="col-sm-6 col-md-4 col-md-offset-3 col-sm-offset-3">
+<div class="col-sm-4 col-md-4 col-md-offset-4 col-sm-offset-4">
     <h1 class="text-center login-title">Entrar na area restrita</h1>
     <div class="account-wall">
         <img class="profile-img" src="web-files/images/icon/user.png" alt="user logo">

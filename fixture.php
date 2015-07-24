@@ -7,7 +7,7 @@
  */
 
 require_once("conexao.php");
-require_once("controllerProdutos.php");
+require_once("modelProdutos.php");
 
 echo "#### Executando Fixture ####\n<BR>";
 $conn = conectarDB();
@@ -109,7 +109,7 @@ $stmt->execute();
 //Produtos
 $nome_pagina        = "Produtos";
 $link_pagina        = "produtos";
-$cProdutos = new controllerProdutos();
+$cProdutos = new modelProdutos();
 $listaProdutos = $cProdutos->listaProdutos();
 
 $conteudo_pagina = '<h2>Pagina de Produtos</h2><br>';

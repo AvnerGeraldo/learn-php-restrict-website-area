@@ -11,8 +11,8 @@ if( !isset($_POST) || empty($_POST['txtSearchBox'])) {
 window.location.href='/php-area-administrativa/';</script>";
     exit;
 } else {
-    require_once("controllerPaginas.php");
-    $cPaginas 			        = new controllerPaginas();
+    require_once("modelPaginas.php");
+    $cPaginas 			        = new modelPaginas();
 
     $palavrasBuscadas           = htmlentities($_POST['txtSearchBox'], ENT_QUOTES, 'UTF-8');
     $arrayPaginasEncontradas    = $cPaginas->buscaConteudoPesquisa($palavrasBuscadas);

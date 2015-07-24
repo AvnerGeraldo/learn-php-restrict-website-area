@@ -7,7 +7,7 @@
  * Time: 20:45
  */
 require_once("conexao.php");
-class controllerProdutos
+class modelProdutos
 {
     private $_db;
 

@@ -3,37 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="web-files/lib/bootstrap/dist/css/bootstrap.min.css" media="all">
-        <link rel="stylesheet" href="web-files/css/themes/bootstrap.min.css" media="all">
-        <link rel="stylesheet" href="web-files/css/styleWebsite.css" media="all">
+        <link rel="stylesheet" href="/php-area-administrativa/web-files/lib/bootstrap/dist/css/bootstrap.min.css" media="all">
+        <link rel="stylesheet" href="/php-area-administrativa/web-files/css/themes/bootstrap.min.css" media="all">
+        <link rel="stylesheet" href="/php-area-administrativa/web-files/css/styleWebsite.css" media="all">
         <?php
             if( strtolower($requisicao_pagina) == 'login' ) {
         ?>
-                <link rel="stylesheet" href="web-files/css/estiloLogin.css" media="all">
+                <link rel="stylesheet" href="/php-area-administrativa/web-files/css/estiloLogin.css" media="all">
         <?php
             } elseif( strtolower($requisicao_pagina) == 'area-administrativa' ) {
         ?>
-                <link rel="stylesheet" href="web-files/css/estiloAreaAdministrativa.css" media="all">
+                <link rel="stylesheet" href="/php-area-administrativa/web-files/css/estiloAreaAdministrativa.css" media="all">
         <?php
             }
         ?>
-        <script type="text/javascript" src="web-files/js/jquery.min.js"></script>
-        <script type="text/javascript" src="web-files/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-            $(function () {
-                $('.navbar-toggle-sidebar').click(function () {
-                    $('.navbar-nav').toggleClass('slide-in');
-                    $('.side-body').toggleClass('body-slide-in');
-                    $('#search').removeClass('in').addClass('collapse').slideUp(200);
-                });
-
-                $('#search-trigger').click(function () {
-                    $('.navbar-nav').removeClass('slide-in');
-                    $('.side-body').removeClass('body-slide-in');
-                    $('.search-input').focus();
-                });
-            });
-        </script>
+        <script type="text/javascript" src="/php-area-administrativa/web-files/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/php-area-administrativa/web-files/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container-fluid">

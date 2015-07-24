@@ -7,7 +7,7 @@
  * Time: 21:02
  */
 require_once("conexao.php");
-class controllerAcesso
+class modelAcesso
 {
 
     private $_db;

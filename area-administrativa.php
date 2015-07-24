@@ -5,18 +5,25 @@
  * Date: 22/07/2015
  * Time: 08:40
  */
-
+require_once("modelAcesso.php");
+require_once("modelPaginas.php");
 if( !isset($_SESSION) ) {
     session_start();
 }
 
-$cAcesso    = new controllerAcesso();
-$cPaginas   = new controllerPaginas();
+$cAcesso    = new modelAcesso();
+$cPaginas   = new modelPaginas();
 
 if( !$cAcesso->verificarSessao($_SESSION['usuario']) ) {
     echo "<script type='text/javascript'>alert('Você não tem permissão para acessar esta área!Redirecionando....');window.location.href='/php-area-administrativa/';";
     exit;
 }
+
+$arrayPaginas = $cPaginas->listaPaginas();
+
+
+//Definindo páginas dentro da área administrativa
+$arrayURL = explode("/", $_GET['url']);
 
 
 
@@ -26,15 +33,17 @@ if( !$cAcesso->verificarSessao($_SESSION['usuario']) ) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="web-files/lib/bootstrap/dist/css/bootstrap.min.css" media="all">
-    <link rel="stylesheet" href="web-files/css/themes/bootstrap.min.css" media="all">
-    <!--<link rel="stylesheet" href="web-files/css/styleWebsite.css" media="all">-->
-    <link rel="stylesheet" href="web-files/css/estiloAreaAdministrativa.css" media="all">
+    <link rel="stylesheet" href="/php-area-administrativa/web-files/lib/bootstrap/dist/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="/php-area-administrativa/web-files/css/themes/bootstrap.min.css" media="all">
+    <!--<link rel="stylesheet" href="/php-area-administrativa/web-files/css/styleWebsite.css" media="all">-->
+    <link rel="stylesheet" href="/php-area-administrativa/web-files/css/estiloAreaAdministrativa.css" media="all">
 
-    <script type="text/javascript" src="web-files/js/jquery.min.js"></script>
-    <script type="text/javascript" src="web-files/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/php-area-administrativa/web-files/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/php-area-administrativa/web-files/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/php-area-administrativa/web-files/lib/ckeditor/ckeditor.js"></script>
+
     <script type="text/javascript">
-        $(function () {
+        $(document).ready( function() {
             $('.navbar-toggle-sidebar').click(function () {
                 $('.navbar-nav').toggleClass('slide-in');
                 $('.side-body').toggleClass('body-slide-in');
@@ -47,6 +56,8 @@ if( !$cAcesso->verificarSessao($_SESSION['usuario']) ) {
                 $('.search-input').focus();
             });
         });
+
+        CKEDITOR.replace( 'txtConteudoPagina' );
     </script>
 </head>
 <body>
@@ -64,33 +75,14 @@ if( !$cAcesso->verificarSessao($_SESSION['usuario']) ) {
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                Administrator
+                <?=ucfirst($_SESSION['usuario']);?>
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-left" method="GET" role="search">
-                <div class="form-group">
-                    <input type="text" name="q" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-            </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://www.pingpong-labs.com" target="_blank">Visit Site</a></li>
-                <li class="dropdown ">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        Account
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class="dropdown-header">SETTINGS</li>
-                        <li class=""><a href="#">Other Link</a></li>
-                        <li class=""><a href="#">Other Link</a></li>
-                        <li class=""><a href="#">Other Link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span></a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -106,46 +98,26 @@ if( !$cAcesso->verificarSessao($_SESSION['usuario']) ) {
                     <!-- Main Menu -->
                     <div class="side-menu-container">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
-
                             <!-- Dropdown-->
                             <li class="panel panel-default" id="dropdown">
                                 <a data-toggle="collapse" href="#dropdown-lvl1">
-                                    <span class="glyphicon glyphicon-user"></span> Sub Level <span class="caret"></span>
+                                    <span class="glyphicon glyphicon-pencil"></span> Paginas <span class="caret"></span>
                                 </a>
-
                                 <!-- Dropdown level 1 -->
                                 <div id="dropdown-lvl1" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <ul class="nav navbar-nav">
-                                            <li><a href="#">Link</a></li>
-                                            <li><a href="#">Link</a></li>
-                                            <li><a href="#">Link</a></li>
-
-                                            <!-- Dropdown level 2 -->
-                                            <li class="panel panel-default" id="dropdown">
-                                                <a data-toggle="collapse" href="#dropdown-lvl2">
-                                                    <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
-                                                </a>
-                                                <div id="dropdown-lvl2" class="panel-collapse collapse">
-                                                    <div class="panel-body">
-                                                        <ul class="nav navbar-nav">
-                                                            <li><a href="#">Link</a></li>
-                                                            <li><a href="#">Link</a></li>
-                                                            <li><a href="#">Link</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                            <?php
+                                                foreach ( $arrayPaginas as $pagina ) {
+                                                    if( $pagina['in_menu'] == 'S' && ($pagina['link_pagina'] != 'contato' && $pagina['link_pagina'] != 'login') ) {
+                                                        echo "<li><a href='/php-area-adminstrativa/area-administrativa/pagina/{$pagina['link_pagina']}'>{$pagina['nome_pagina']}</a></li>";
+                                                    }
+                                                }
+                                            ?>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-
-                            <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
-
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
@@ -153,19 +125,37 @@ if( !$cAcesso->verificarSessao($_SESSION['usuario']) ) {
             </div>
         </div>  		</div>
     <div class="col-md-10 content">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Dashboard
-            </div>
-            <div class="panel-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-        </div>
+        <?php
+            if( isset($arrayURL[1]) && $arrayURL[1] == 'area' ) {
+        ?>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Pagina <?=ucfirst($arrayURL[2]);?>
+                    </div>
+                    <div class="panel-body">
+                        <form name="formAlteraConteudoPagina" method="POST" action="/php-area-administrativa/area-administrativa/salvarPagina" class="form-horizontal col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <textarea name="txtConteudoPagina" id="txtConteudoPagina" rows="10" cols="80">
+                                    <?php
+                                    if( isset($arrayURL[2]) && !empty($arrayURL[2]) ) {
+                                        foreach( $arrayPaginas as $pagina ) {
+                                            if( $pagina['link_pagina'] == $arrayURL[2] ) {
+                                                echo html_entity_decode($pagina['conteudo_pagina']);
+                                            }
+                                        }
+                                    }
+                                    ?>
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="btnSalvarPagina" value="Salvar Pagina" class="btn btn-success">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        <?php
+            }
+        ?>
     </div>
 
     <footer class="pull-left footer">

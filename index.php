@@ -1,7 +1,7 @@
 <?php
 
-require_once("controllerPaginas.php");
-$cPaginas 			= new controllerPaginas();
+require_once("modelPaginas.php");
+$cPaginas 			= new modelPaginas();
 $conteudo_pagina 	= null;
 $requisicao_pagina 	= STR_REPLACE(".php", "", ( empty($_SERVER['REQUEST_URI']) ? 'index' : SUBSTR($_SERVER['REQUEST_URI'], 1, STRLEN($_SERVER['REQUEST_URI']))));
 
