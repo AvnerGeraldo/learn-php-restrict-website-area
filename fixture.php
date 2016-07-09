@@ -5,7 +5,6 @@
  * Date: 17/07/2015
  * Time: 19:37
  */
-
 require_once("conexao.php");
 require_once("modelProdutos.php");
 
@@ -63,13 +62,13 @@ for( $i = 0; $i <= 9; $i++ ) {
     $stmt->bindValue("valor", $valor);
     $stmt->execute();
 }
+echo " - OK\n<BR>";
 
-
-echo "Removendo tabela tbPaginas";
+echo "Removendo tabela tbpaginas";
 $conn->query("DROP TABLE IF EXISTS tbpaginas");
 echo " - OK\n<BR>";
 
-echo "Criando tabela tbPaginas";
+echo "Criando tabela tbpaginas";
 $conn->query("CREATE TABLE IF NOT EXISTS tbpaginas(
 id_pagina INT NOT NULL AUTO_INCREMENT,
 nome_pagina VARCHAR(100)  NOT NULL,
@@ -81,13 +80,13 @@ PRIMARY KEY(id_pagina)
 ;");
 echo " - OK\n<BR>";
 
-echo "Inserindo dados na tabela tbPaginas";
+echo "Inserindo dados na tabela tbpaginas";
 //HOME
 $nome_pagina = "Home";
 $link_pagina = "index";
-$conteudo_pagina = "Página Principal";
+$conteudo_pagina = "PÃ¡gina Principal";
 $conteudo_pagina = htmlentities($conteudo_pagina, ENT_QUOTES, 'ISO-8859-1');
-$stmt = $conn->prepare("INSERT INTO tbPaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
+$stmt = $conn->prepare("INSERT INTO tbpaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
 $stmt->bindValue("pagina", $nome_pagina);
 $stmt->bindValue("link", $link_pagina);
 $stmt->bindValue("conteudo", $conteudo_pagina);
@@ -97,9 +96,9 @@ $stmt->execute();
 //Empresa
 $nome_pagina        = "Empresa";
 $link_pagina        = "empresa";
-$conteudo_pagina    = "Página empresa";
+$conteudo_pagina    = "PÃ¡gina empresa";
 $conteudo_pagina = htmlentities($conteudo_pagina, ENT_QUOTES, 'ISO-8859-1');
-$stmt = $conn->prepare("INSERT INTO tbPaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
+$stmt = $conn->prepare("INSERT INTO tbpaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
 $stmt->bindValue("pagina", $nome_pagina);
 $stmt->bindValue("link", $link_pagina);
 $stmt->bindValue("conteudo", $conteudo_pagina);
@@ -135,7 +134,7 @@ foreach($listaProdutos as $produto) {
 }
 
 $conteudo_pagina = htmlentities($conteudo_pagina, ENT_QUOTES, 'ISO-8859-1');
-$stmt = $conn->prepare("INSERT INTO tbPaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
+$stmt = $conn->prepare("INSERT INTO tbpaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
 $stmt->bindValue("pagina", $nome_pagina);
 $stmt->bindValue("link", $link_pagina);
 $stmt->bindValue("conteudo", $conteudo_pagina);
@@ -144,12 +143,12 @@ $stmt->execute();
 
 
 
-//Serviços
+//ServiÃ§os
 $nome_pagina        = "Servicos";
 $link_pagina        = "servicos";
-$conteudo_pagina    = "Página Serviços";
+$conteudo_pagina    = "PÃ¡gina ServiÃ§os";
 $conteudo_pagina = htmlentities($conteudo_pagina, ENT_QUOTES, 'ISO-8859-1');
-$stmt = $conn->prepare("INSERT INTO tbPaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
+$stmt = $conn->prepare("INSERT INTO tbpaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
 $stmt->bindValue("pagina", $nome_pagina);
 $stmt->bindValue("link", $link_pagina);
 $stmt->bindValue("conteudo", $conteudo_pagina);
@@ -160,19 +159,19 @@ $stmt->execute();
 $nome_pagina        = "Contato";
 $link_pagina        = "contato";
 $conteudo_pagina    = null;
-$stmt = $conn->prepare("INSERT INTO tbPaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
+$stmt = $conn->prepare("INSERT INTO tbpaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
 $stmt->bindValue("pagina", $nome_pagina);
 $stmt->bindValue("link", $link_pagina);
 $stmt->bindValue("conteudo", $conteudo_pagina);
 $stmt->bindValue("in_menu", 'S');
 $stmt->execute();
 
-//Páginas Internas
+//PÃ¡ginas Internas
 //Busca
 $nome_pagina        = 'Busca';
 $link_pagina        = 'busca';
 $conteudo_pagina    = NULL;
-$stmt = $conn->prepare("INSERT INTO tbPaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
+$stmt = $conn->prepare("INSERT INTO tbpaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
 $stmt->bindValue("pagina", $nome_pagina);
 $stmt->bindValue("link", $link_pagina);
 $stmt->bindValue("conteudo", $conteudo_pagina);
@@ -183,7 +182,7 @@ $stmt->execute();
 $nome_pagina        = 'Login';
 $link_pagina        = 'login';
 $conteudo_pagina    = NULL;
-$stmt = $conn->prepare("INSERT INTO tbPaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
+$stmt = $conn->prepare("INSERT INTO tbpaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
 $stmt->bindValue("pagina", $nome_pagina);
 $stmt->bindValue("link", $link_pagina);
 $stmt->bindValue("conteudo", $conteudo_pagina);
@@ -191,11 +190,11 @@ $stmt->bindValue("in_menu", 'S');
 $stmt->execute();
 
 
-//Área Administrativa
+//Ãrea Administrativa
 $nome_pagina        = 'Area Administrativa';
 $link_pagina        = 'area-administrativa';
 $conteudo_pagina    = NULL;
-$stmt = $conn->prepare("INSERT INTO tbPaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
+$stmt = $conn->prepare("INSERT INTO tbpaginas(nome_pagina, link_pagina, conteudo_pagina, in_menu) VALUES(:pagina, :link , :conteudo, :in_menu)");
 $stmt->bindValue("pagina", $nome_pagina);
 $stmt->bindValue("link", $link_pagina);
 $stmt->bindValue("conteudo", $conteudo_pagina);

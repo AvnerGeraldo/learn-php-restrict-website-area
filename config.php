@@ -3,7 +3,7 @@ return array(
     'db' => array(
         'host' => "localhost",
         'dbname' => "bd_site_simples",
-        'user' => "admin",
-        'password' => "kmy878"
+        'user' => "user_admin",
+        'password' => "Avenged2"
     )
 );

@@ -8,7 +8,7 @@
 require_once("header.php");
 if( !isset($_POST) || empty($_POST['txtSearchBox'])) {
     echo "<script>alert('Por favor preencha o campo de pesquisa antes de buscar!');
-window.location.href='/php-area-administrativa/';</script>";
+window.location.href='/';</script>";
     exit;
 } else {
     require_once("modelPaginas.php");
@@ -27,7 +27,7 @@ window.location.href='/php-area-administrativa/';</script>";
         if( empty($arrayPaginasEncontradas) ) {
         ?>
             <div class="well">
-                <center><h3>Nao ha conteudo nas paginas com os dados buscados!!!</h3></center>
+                <center></center><h3>Nao ha conteudo nas paginas com os dados buscados!!!</h3></center>
             </div>
         <?php
         } else {
@@ -35,23 +35,17 @@ window.location.href='/php-area-administrativa/';</script>";
         <div class="well">
             <h1 class="text-center">Paginas encontradas</h1>
             <BR><BR>
-            <div class="list-group">
+            <ul class="list-group">
                 <?php
                 foreach($arrayPaginasEncontradas as $pagina) {
-                    echo "<a href='/php-area-administrativa/";
+                    echo "<li class=\"list-group-item\"><a href='/";
                     if( $pagina['link_pagina'] != 'index' ) {
                       echo $pagina['link_pagina'];
                     }
-                    echo "' class=\"list-group-item\">";
-                ?>
-                    <div class="col-md-9">
-                        <h4 class="list-group-item-heading"><?=$pagina['nome_pagina']?></h4>
-                    </div>
-                </a>
-                <?php
+                    echo "'><h4>{$pagina['nome_pagina']}</h4></a></li>";
                 }
                 ?>
-            </div>
+            </ul>
         </div>
         </div>
         <?php

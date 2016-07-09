@@ -19,7 +19,7 @@ class modelPaginas
 
     public function listaPaginas($link = null)
     {
-        $sql = "SELECT * FROM tbPaginas WHERE 1=1 ";
+        $sql = "SELECT * FROM tbpaginas WHERE 1=1 ";
 
         if( !empty($link) ) {
             $sql .= " AND link_pagina = '{$link}'";
@@ -27,13 +27,14 @@ class modelPaginas
 
         $stmt  = $this->_db->prepare($sql);
         $stmt->execute();
+
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function buscaConteudoPesquisa($texto)
     {
 
-        $sql  = "SELECT * FROM tbPaginas WHERE conteudo_pagina LIKE '%{$texto}%'";
+        $sql  = "SELECT * FROM tbpaginas WHERE conteudo_pagina LIKE '%{$texto}%'";
 
         $query = $this->_db->query($sql);
         return $query->fetchAll(PDO::FETCH_ASSOC);
@@ -48,7 +49,7 @@ class modelPaginas
             if( isset($id_pagina) && !empty($id_pagina) ) {
                 //$conteudoPagina = htmlentities($conteudoPagina, ENT_QUOTES, 'ISO-8859-1');
 
-                $sql  = "UPDATE tbPaginas SET conteudo_pagina = '{$conteudoPagina}' ";
+                $sql  = "UPDATE tbpaginas SET conteudo_pagina = '{$conteudoPagina}' ";
                 $sql .= " WHERE id_pagina ={$id_pagina}";
                 $stmt  = $this->_db->prepare($sql);
                 return $stmt->execute();

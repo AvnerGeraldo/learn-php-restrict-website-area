@@ -11,20 +11,19 @@ if( !isset($_SESSION) ) {
     session_start();
 }
 
+
 $cAcesso    = new modelAcesso();
 $mPaginas   = new modelPaginas();
 
-if( !$cAcesso->verificarSessao($_SESSION['usuario']) ) {
-    echo "<script type='text/javascript'>alert('Você não tem permissão para acessar esta área!Redirecionando....');window.location.href='/php-area-administrativa/';";
+if( $cAcesso->verificarSessao($_SESSION['usuario']) == FALSE ) {
+    echo "<script type='text/javascript'>alert('Você não tem permissão para acessar esta área!Redirecionando....');window.location.href='/';</script>";
     exit;
 }
 
 $arrayPaginas = $mPaginas->listaPaginas();
 
-
 //Definindo páginas dentro da área administrativa
-$arrayURL = explode("/", $_GET['url']);
-
+$arrayURL = explode("/", $_SERVER['REQUEST_URI']);
 
 
 ?>
@@ -33,14 +32,14 @@ $arrayURL = explode("/", $_GET['url']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/php-area-administrativa/web-files/lib/bootstrap/dist/css/bootstrap.min.css" media="all">
-    <link rel="stylesheet" href="/php-area-administrativa/web-files/css/themes/bootstrap.min.css" media="all">
-    <!--<link rel="stylesheet" href="/php-area-administrativa/web-files/css/styleWebsite.css" media="all">-->
-    <link rel="stylesheet" href="/php-area-administrativa/web-files/css/estiloAreaAdministrativa.css" media="all">
+    <link rel="stylesheet" href="/web-files/lib/bootstrap/dist/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="/web-files/css/themes/bootstrap.min.css" media="all">
+    <!--<link rel="stylesheet" href="/web-files/css/styleWebsite.css" media="all">-->
+    <link rel="stylesheet" href="/web-files/css/estiloAreaAdministrativa.css" media="all">
 
-    <script type="text/javascript" src="/php-area-administrativa/web-files/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/php-area-administrativa/web-files/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/php-area-administrativa/web-files/lib/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/web-files/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/web-files/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/web-files/lib/ckeditor/ckeditor.js"></script>
 
     <script type="text/javascript">
         $(document).ready( function() {
@@ -56,6 +55,15 @@ $arrayURL = explode("/", $_GET['url']);
                 $('.search-input').focus();
             });
         });
+
+        function logout()
+        {
+            if( confirm("Deseja sair da area administrativa?") ) {
+                alert("Deixando a area administrativa.");
+                window.location.href="/logout.php";
+            }
+        }
+
     </script>
 </head>
 <body>
@@ -80,7 +88,7 @@ $arrayURL = explode("/", $_GET['url']);
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-off"></span></a></li>
+                <li><a href="#" onclick="logout()"><span class="glyphicon glyphicon-off"></span></a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -108,7 +116,7 @@ $arrayURL = explode("/", $_GET['url']);
                                             <?php
                                                 foreach ( $arrayPaginas as $pagina ) {
                                                     if( $pagina['in_menu'] == 'S' && ($pagina['link_pagina'] != 'contato' && $pagina['link_pagina'] != 'login') ) {
-                                                        echo "<li><a href='/php-area-administrativa/area-administrativa/area/{$pagina['link_pagina']}'>{$pagina['nome_pagina']}</a></li>";
+                                                        echo "<li><a href='/area-administrativa/area/{$pagina['link_pagina']}'>{$pagina['nome_pagina']}</a></li>";
                                                     }
                                                 }
                                             ?>
@@ -124,26 +132,26 @@ $arrayURL = explode("/", $_GET['url']);
         </div>  		</div>
     <div class="col-md-10 content">
         <?php
-            if( isset($arrayURL[1]) ) {
-                switch ($arrayURL[1]) {
+            if( isset($arrayURL[2]) ) {
+                switch ($arrayURL[2]) {
                     case 'area':
         ?>
 
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                Pagina <?= ucfirst($arrayURL[2]); ?>
+                                Pagina <?= ucfirst($arrayURL[3]); ?>
                             </div>
                             <div class="panel-body">
                                 <form name="formAlteraConteudoPagina" method="POST"
-                                      action="/php-area-administrativa/area-administrativa/salvarPagina"
+                                      action="/area-administrativa/salvarPagina"
                                       class="form-horizontal col-md-12 col-sm-12">
                                     <div class="form-group">
-                                        <input type="hidden" name="linkPagina" value="<?=$arrayURL[2]?>">
+                                        <input type="hidden" name="linkPagina" value="<?=$arrayURL[3]?>">
                                         <textarea name="txtConteudoPagina" id="txtConteudoPagina" rows="10" cols="80">
                                             <?php
-                                            if (isset($arrayURL[2]) && !empty($arrayURL[2])) {
+                                            if (isset($arrayURL[3]) && !empty($arrayURL[3])) {
                                                 foreach ($arrayPaginas as $pagina) {
-                                                    if ($pagina['link_pagina'] == $arrayURL[2]) {
+                                                    if ($pagina['link_pagina'] == $arrayURL[3]) {
                                                         echo html_entity_decode($pagina['conteudo_pagina']);
                                                     }
                                                 }

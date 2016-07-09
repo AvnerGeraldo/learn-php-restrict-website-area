@@ -4,10 +4,12 @@ require_once("modelPaginas.php");
 $mPaginas 			= new modelPaginas();
 $conteudo_pagina 	= null;
 $requisicao_pagina 	= STR_REPLACE(".php", "", ( empty($_SERVER['REQUEST_URI']) ? 'index' : SUBSTR($_SERVER['REQUEST_URI'], 1, STRLEN($_SERVER['REQUEST_URI']))));
+$requisicao_pagina  = ( empty($requisicao_pagina) ? 'index' : $requisicao_pagina);
 
-if( strpos($requisicao_pagina, "/") >= 0 ) {
-    $arrayRequisicao    = explode("/", $requisicao_pagina);
-    $requisicao_pagina  = ( empty($arrayRequisicao[1]) ? 'index' : $arrayRequisicao[1] );
+
+if( strpos($requisicao_pagina, "/") > 0 ) {
+	$arrayRequisicao = explode("/", $requisicao_pagina);
+	$requisicao_pagina = (empty($arrayRequisicao[0]) ? 'index' : $arrayRequisicao[0]);
 }
 
 $arrayPaginas 		= $mPaginas->listaPaginas();

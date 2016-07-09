@@ -68,7 +68,6 @@ class modelAcesso
                 return TRUE;
             }
         }
-
         return FALSE;
     }
 

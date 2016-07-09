@@ -3,22 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/php-area-administrativa/web-files/lib/bootstrap/dist/css/bootstrap.min.css" media="all">
-        <link rel="stylesheet" href="/php-area-administrativa/web-files/css/themes/bootstrap.min.css" media="all">
-        <link rel="stylesheet" href="/php-area-administrativa/web-files/css/styleWebsite.css" media="all">
+        <link rel="stylesheet" href="/web-files/lib/bootstrap/dist/css/bootstrap.min.css" media="all">
+        <link rel="stylesheet" href="/web-files/css/themes/bootstrap.min.css" media="all">
+        <link rel="stylesheet" href="/web-files/css/styleWebsite.css" media="all">
         <?php
             if( strtolower($requisicao_pagina) == 'login' ) {
         ?>
-                <link rel="stylesheet" href="/php-area-administrativa/web-files/css/estiloLogin.css" media="all">
+                <link rel="stylesheet" href="/web-files/css/estiloLogin.css" media="all">
         <?php
             } elseif( strtolower($requisicao_pagina) == 'area-administrativa' ) {
         ?>
-                <link rel="stylesheet" href="/php-area-administrativa/web-files/css/estiloAreaAdministrativa.css" media="all">
+                <link rel="stylesheet" href="/web-files/css/estiloAreaAdministrativa.css" media="all">
         <?php
             }
         ?>
-        <script type="text/javascript" src="/php-area-administrativa/web-files/js/jquery.min.js"></script>
-        <script type="text/javascript" src="/php-area-administrativa/web-files/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/web-files/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/web-files/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -31,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="/php-area-administrativa/">Logo</a>
+                  <a class="navbar-brand" href="/">Logo</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                     <ul class="nav navbar-nav">
@@ -44,7 +44,7 @@
                                       $link .= " class='active'";
                                   }
 
-                                  $link .= "><a href='" . ($pagina['link_pagina'] != 'index' ? $pagina['link_pagina'] : '/php-area-administrativa/') . "'>";
+                                  $link .= "><a href='" . ($pagina['link_pagina'] != 'index' ? $pagina['link_pagina'] : '/') . "'>";
                                   if( $pagina['link_pagina'] == 'login' ) {
                                       $link .= "<span class='glyphicon glyphicon-lock'></span>";
                                   } else {
@@ -59,7 +59,7 @@
                       ?>
                     </ul>
                     <div class="col-sm-4 col-md-4">
-                        <form action="/php-area-administrativa/busca" method="POST" class="navbar-form" role="search">
+                        <form action="/busca" method="POST" class="navbar-form" role="search">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search" name="txtSearchBox">
                                 <div class="input-group-btn">

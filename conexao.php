@@ -10,7 +10,7 @@ try
 {
     $conexao = new \PDO("mysql:host=localhost;dbname=bd_site_simples", "admin", "kmy878");
 } catch (\PDOException $e) {
-    die("Erro cÛdigo: ".$e->getCode().": ".$e->getMessage());
+    die("Erro cÔøΩdigo: ".$e->getCode().": ".$e->getMessage());
 }
 $id = "1";
 $sql    = "SELECT * FROM tbpaginas WHERE id_pagina = :id";
@@ -28,7 +28,7 @@ function conectarDB()
     try {
         $config = include("config.php");
         if( !isset($config['db']) ) {
-            throw new \InvalidArgumentException("ConfiguraÁ„o do banco de dados n„o existe!");
+            throw new \InvalidArgumentException("Configura√ß√£o do banco de dados n√£o existe!");
         }
 
         extract($config['db']);

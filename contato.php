@@ -42,7 +42,7 @@
         <img src="web-files/images/banner.jpg" alt="thumbnail" class="img-thumbnail">
     </div>
     <div class="col-lg-7 col-sm-7 col-md-7">
-        <form name='formContato' action="/php-area-administrativa/contato" method="POST" class="form-horizontal">
+        <form name='formContato' action="/contato" method="POST" class="form-horizontal">
           <fieldset>
             <legend>Contato</legend>
             <div class="form-group">

@@ -18,7 +18,7 @@ class modelProdutos
 
     public function listaProdutos($id_produto = null, $nome_produto = null)
     {
-        $sql = "SELECT * FROM tbProdutos WHERE 1=1 ";
+        $sql = "SELECT * FROM tbprodutos WHERE 1=1 ";
 
         if( !empty($id_produto) ) {
             $sql .= " AND id_produto = ':id_produto'";
